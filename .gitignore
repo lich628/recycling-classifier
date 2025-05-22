@@ -1,0 +1,31 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*.so
+
+# Distribution / packaging
+.Python
+env/
+venv/
+ENV/
+*.egg-info/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# Jupyter execution outputs (optional strip tools handle this)
+*.nbconvert.ipynb
+
+# Mac system files
+.DS_Store
+
+# Model/data files
+*.h5
+*.pth
+*.pt
+*.ckpt
+datasets/
+models/
+
+# VSCode settings
+.vscode/
