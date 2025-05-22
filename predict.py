@@ -20,7 +20,7 @@ transform = transforms.Compose([
         std=[0.229, 0.224, 0.225]
     )
 ])
-
+# PULL REQ BY JIAJUN LU
 # 加载模型
 model = models.resnet18()
 model.fc = nn.Linear(model.fc.in_features, 6)
