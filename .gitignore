@@ -3,4 +3,5 @@ __pycache__/
 *.pyc
 *.pyo
 *.whl
-*.pth
+*.pth         # 忽略所有 .pth
+!models/*.pth # 但保留 models 目录里的
