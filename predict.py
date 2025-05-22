@@ -5,6 +5,8 @@ import torchvision.transforms as transforms
 from PIL import Image
 import sys
 
+# 测试pull request wty
+
 # 设置设备
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
