@@ -22,6 +22,7 @@ ENV/
 # Model/data files
 *.h5
 *.pth
+!models/*.pth
 *.pt
 *.ckpt
 datasets/
