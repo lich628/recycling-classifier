@@ -9,6 +9,8 @@ env/
 venv/
 ENV/
 *.egg-info/
+#trey's virtual environment
+venv-pyenv/
 
 # Jupyter Notebook checkpoints
 .ipynb_checkpoints

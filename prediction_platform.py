@@ -23,7 +23,7 @@ transform = transforms.Compose([
 # Load model
 model = models.resnet18()
 model.fc = nn.Linear(model.fc.in_features, 6)
-model.load_state_dict(torch.load('models/recycling_resnet18_20ep.pth', map_location=device))
+model.load_state_dict(torch.load('models/recycling_resnet18_30ep.pth', map_location=device))
 model.to(device)
 model.eval()
 
@@ -48,6 +48,8 @@ def open_image():
 
             image_label.config(image=img_tk)
             image_label.image = img_tk  # prevent garbage collection
+            image_label.update_idletasks()
+
 
             result = predict_image(file_path)
             result_label.config(text=f"Prediction: {result}")
